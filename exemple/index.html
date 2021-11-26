@@ -1,0 +1,654 @@
+
+<!doctype html>
+<html lang="pt" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+      <link rel="icon" href="../assets/favico2.ico">
+      <meta name="generator" content="mkdocs-1.2.3, mkdocs-material-7.3.6">
+    
+    
+      
+        <title>Exemplos - IQ Script</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.a57b2b03.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.3f5d1f46.min.css">
+        
+          
+          
+          <meta name="theme-color" content="#009485">
+        
+      
+    
+    
+    
+      
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=:300,400,400i,700%7CRoboto+Mono&display=fallback">
+        <style>:root{--md-text-font-family:"";--md-code-font-family:"Roboto Mono"}</style>
+      
+    
+    
+    
+      <link rel="stylesheet" href="../stylesheets/extra.css">
+    
+    
+      
+
+
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="slate" data-md-color-primary="teal" data-md-color-accent="light-green">
+  
+    
+    <script>function __prefix(e){return new URL("..",location).pathname+"."+e}function __get(e,t=localStorage){return JSON.parse(t.getItem(__prefix(e)))}</script>
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#exemplos-de-scriptsindicadores" class="md-skip">
+          Ir para o conteúdo
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Cabeçalho">
+    <a href=".." title="IQ Script" class="md-header__button md-logo" aria-label="IQ Script" data-md-component="logo">
+      
+  <img src="../assets/logo.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            IQ Script
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Exemplos
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+      </label>
+      
+<div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Buscar" placeholder="Buscar" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Pesquisar">
+        
+          <a href="javascript:void(0)" class="md-search__icon md-icon" aria-label="Compartilhar" data-clipboard data-clipboard-text="" data-md-component="search-share" tabindex="-1">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M18 16.08c-.76 0-1.44.3-1.96.77L8.91 12.7c.05-.23.09-.46.09-.7 0-.24-.04-.47-.09-.7l7.05-4.11c.54.5 1.25.81 2.04.81a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3c0 .24.04.47.09.7L8.04 9.81C7.5 9.31 6.79 9 6 9a3 3 0 0 0-3 3 3 3 0 0 0 3 3c.79 0 1.5-.31 2.04-.81l7.12 4.15c-.05.21-.08.43-.08.66 0 1.61 1.31 2.91 2.92 2.91 1.61 0 2.92-1.3 2.92-2.91A2.92 2.92 0 0 0 18 16.08z"/></svg>
+          </a>
+        
+        <button type="reset" class="md-search__icon md-icon" aria-label="Limpar" tabindex="-1">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Inicializando a pesquisa
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="Abas" data-md-component="tabs">
+  <div class="md-tabs__inner md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+
+
+  <li class="md-tabs__item">
+    <a href=".." class="md-tabs__link">
+      Inicio
+    </a>
+  </li>
+
+      
+        
+  
+  
+
+
+  <li class="md-tabs__item">
+    <a href="../config/" class="md-tabs__link">
+      Configurações
+    </a>
+  </li>
+
+      
+        
+  
+  
+
+
+  <li class="md-tabs__item">
+    <a href="../diferencas/" class="md-tabs__link">
+      Metodos suportados
+    </a>
+  </li>
+
+      
+        
+  
+  
+
+
+  <li class="md-tabs__item">
+    <a href="../key/" class="md-tabs__link">
+      Como proteger seu Script/Indicador
+    </a>
+  </li>
+
+      
+        
+  
+  
+    
+  
+
+
+  <li class="md-tabs__item">
+    <a href="./" class="md-tabs__link md-tabs__link--active">
+      Exemplos
+    </a>
+  </li>
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+  
+
+
+  
+
+<nav class="md-nav md-nav--primary md-nav--lifted md-nav--integrated" aria-label="Navegação" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="IQ Script" class="md-nav__button md-logo" aria-label="IQ Script" data-md-component="logo">
+      
+  <img src="../assets/logo.png" alt="logo">
+
+    </a>
+    IQ Script
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        Inicio
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../config/" class="md-nav__link">
+        Configurações
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../diferencas/" class="md-nav__link">
+        Metodos suportados
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../key/" class="md-nav__link">
+        Como proteger seu Script/Indicador
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+    
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          Exemplos
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        Exemplos
+      </a>
+      
+        
+
+
+<nav class="md-nav md-nav--secondary" aria-label="Índice">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Índice
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#put-call" class="md-nav__link">
+    PUT / CALL
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#simple-reversal-point" class="md-nav__link">
+    Simple Reversal Point
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#vdubs-mr-mani" class="md-nav__link">
+    Vdubs Mr Mani
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+          
+          <div class="md-content" data-md-component="content">
+            <article class="md-content__inner md-typeset">
+              
+                
+                
+                <h1 id="exemplos-de-scriptsindicadores">Exemplos de scripts/indicadores</h1>
+<h2 id="put-call">PUT / CALL</h2>
+<p>Fonte desconhecida, autor Janderson Rocha</p>
+<div class="highlight"><span class="filename">PUT / CALL</span><pre><span></span><code><span class="c1">--DESENVOLVIDO POR JANDERSON ROCHA - (64)9.9944-5856</span>
+<span class="c1">--PARA ENTENDER O USO DO SCRIPT ENTRE EM CONTATO</span>
+<span class="n">instrument</span> <span class="p">{</span> <span class="n">name</span> <span class="o">=</span> <span class="s2">&quot;PUT / CALL&quot;</span><span class="p">,</span> <span class="n">icon</span><span class="o">=</span><span class="s2">&quot;indicators:BB&quot;</span><span class="p">,</span> <span class="n">overlay</span> <span class="o">=</span> <span class="kc">true</span> <span class="p">}</span>
+
+<span class="n">input_group</span> <span class="p">{</span>
+    <span class="s2">&quot;COMPRAR&quot;</span><span class="p">,</span> 
+    <span class="n">comprar_color</span> <span class="o">=</span> <span class="n">input</span> <span class="p">{</span><span class="n">default</span> <span class="o">=</span> <span class="s2">&quot;green&quot;</span><span class="p">,</span> <span class="nb">type</span> <span class="o">=</span> <span class="n">input</span><span class="p">.</span><span class="n">color</span><span class="p">}</span> 
+<span class="p">}</span>
+
+<span class="n">input_group</span> <span class="p">{</span>
+    <span class="s2">&quot;VENDER&quot;</span><span class="p">,</span> 
+    <span class="n">vender_color</span> <span class="o">=</span> <span class="n">input</span> <span class="p">{</span><span class="n">default</span> <span class="o">=</span> <span class="s2">&quot;red&quot;</span><span class="p">,</span> <span class="nb">type</span> <span class="o">=</span> <span class="n">input</span><span class="p">.</span><span class="n">color</span><span class="p">}</span> 
+<span class="p">}</span>
+
+<span class="n">sec</span> <span class="o">=</span> <span class="n">security</span> <span class="p">(</span><span class="n">current_ticker_id</span><span class="p">,</span> <span class="s2">&quot;5m&quot;</span><span class="p">)</span>
+
+<span class="kr">if</span> <span class="n">sec</span> <span class="ow">and</span> <span class="n">sec</span><span class="p">.</span><span class="n">open_time</span> <span class="o">==</span> <span class="n">open_time</span> <span class="kr">then</span>
+
+    <span class="n">base</span>      <span class="o">=</span> <span class="n">sma</span><span class="p">(</span><span class="n">open</span><span class="p">,</span> <span class="s1">&#39;10&#39;</span><span class="p">)</span>
+    <span class="n">high_band</span> <span class="o">=</span> <span class="n">base</span> <span class="o">+</span> <span class="p">(</span><span class="n">stdev</span><span class="p">(</span><span class="n">open</span><span class="p">,</span> <span class="mi">10</span><span class="p">)</span> <span class="o">*</span> <span class="mi">2</span><span class="p">)</span>
+    <span class="n">low_band</span>  <span class="o">=</span> <span class="n">base</span> <span class="o">-</span> <span class="p">(</span><span class="n">stdev</span><span class="p">(</span><span class="n">open</span><span class="p">,</span> <span class="mi">10</span><span class="p">)</span> <span class="o">*</span> <span class="mi">2</span><span class="p">)</span>
+    <span class="n">media</span>     <span class="o">=</span> <span class="n">sma</span><span class="p">(</span><span class="n">close</span><span class="p">,</span> <span class="s1">&#39;20&#39;</span><span class="p">)</span>
+    <span class="n">up_band</span>   <span class="o">=</span> <span class="n">media</span> <span class="o">+</span> <span class="p">(</span><span class="n">stdev</span><span class="p">(</span><span class="n">close</span><span class="p">,</span> <span class="mi">20</span><span class="p">)</span> <span class="o">*</span> <span class="mf">2.5</span><span class="p">)</span>
+    <span class="n">down_band</span> <span class="o">=</span> <span class="n">media</span> <span class="o">-</span> <span class="p">(</span><span class="n">stdev</span><span class="p">(</span><span class="n">close</span><span class="p">,</span> <span class="mi">20</span><span class="p">)</span> <span class="o">*</span> <span class="mf">2.5</span><span class="p">)</span>
+    <span class="n">expo</span>      <span class="o">=</span> <span class="n">ema</span><span class="p">(</span><span class="n">close</span><span class="p">,</span><span class="s1">&#39;100&#39;</span><span class="p">)</span>
+
+<span class="c1">--IMPULSOS</span>
+
+    <span class="n">plot_shape</span><span class="p">((</span><span class="n">open</span> <span class="o">&gt;</span> <span class="n">high_band</span> <span class="ow">and</span> <span class="n">close</span> <span class="o">&lt;</span> <span class="n">high_band</span><span class="p">),</span> 
+        <span class="s2">&quot;VENDER&quot;</span><span class="p">,</span> 
+        <span class="n">shape_style</span><span class="p">.</span><span class="n">arrowdown</span><span class="p">,</span> 
+        <span class="n">shape_size</span><span class="p">.</span><span class="n">huge</span><span class="p">,</span>
+        <span class="n">vender_color</span><span class="p">,</span> 
+        <span class="n">shape_location</span><span class="p">.</span><span class="n">abovebar</span><span class="p">,</span> 
+        <span class="mi">0</span><span class="p">,</span> 
+        <span class="s2">&quot;VENDA&quot;</span><span class="p">,</span> 
+        <span class="n">vender_color</span><span class="p">)</span>
+
+    <span class="n">plot_shape</span><span class="p">((</span><span class="n">open</span> <span class="o">&lt;</span> <span class="n">low_band</span> <span class="ow">and</span> <span class="n">close</span> <span class="o">&gt;</span> <span class="n">low_band</span><span class="p">),</span> 
+        <span class="s2">&quot;COMPRAR&quot;</span><span class="p">,</span> 
+        <span class="n">shape_style</span><span class="p">.</span><span class="n">arrowup</span><span class="p">,</span> 
+        <span class="n">shape_size</span><span class="p">.</span><span class="n">huge</span><span class="p">,</span>
+        <span class="n">comprar_color</span><span class="p">,</span> 
+        <span class="n">shape_location</span><span class="p">.</span><span class="n">belowbar</span><span class="p">,</span> 
+        <span class="mi">0</span><span class="p">,</span> 
+        <span class="s2">&quot;COMPRA&quot;</span><span class="p">,</span> 
+        <span class="n">comprar_color</span><span class="p">)</span>
+
+<span class="c1">-- RETRAÇÕES    </span>
+
+    <span class="n">plot_shape</span><span class="p">((</span><span class="n">open</span> <span class="o">&lt;</span> <span class="n">up_band</span> <span class="ow">and</span> <span class="n">high</span> <span class="o">&gt;</span> <span class="n">up_band</span> <span class="ow">and</span> <span class="n">close</span> <span class="o">&lt;=</span> <span class="n">up_band</span> <span class="ow">and</span> <span class="n">expo</span> <span class="o">&gt;</span> <span class="n">up_band</span><span class="p">),</span> 
+        <span class="s2">&quot;VENDER1&quot;</span><span class="p">,</span> 
+        <span class="n">shape_style</span><span class="p">.</span><span class="n">arrowdown</span><span class="p">,</span> 
+        <span class="n">shape_size</span><span class="p">.</span><span class="n">huge</span><span class="p">,</span>
+        <span class="n">vender_color</span><span class="p">,</span> 
+        <span class="n">shape_location</span><span class="p">.</span><span class="n">abovebar</span><span class="p">,</span> 
+        <span class="mi">0</span><span class="p">,</span> 
+        <span class="s2">&quot;VENDA RT&quot;</span><span class="p">,</span> 
+        <span class="n">vender_color</span><span class="p">)</span>
+
+    <span class="n">plot_shape</span><span class="p">((</span><span class="n">open</span> <span class="o">&gt;</span> <span class="n">down_band</span> <span class="ow">and</span> <span class="n">low</span> <span class="o">&lt;</span> <span class="n">down_band</span> <span class="ow">and</span> <span class="n">close</span> <span class="o">&gt;=</span> <span class="n">down_band</span> <span class="ow">and</span> <span class="n">expo</span> <span class="o">&lt;</span> <span class="n">down_band</span><span class="p">),</span> 
+        <span class="s2">&quot;COMPRAR1&quot;</span><span class="p">,</span> 
+        <span class="n">shape_style</span><span class="p">.</span><span class="n">arrowup</span><span class="p">,</span> 
+        <span class="n">shape_size</span><span class="p">.</span><span class="n">huge</span><span class="p">,</span>
+        <span class="n">comprar_color</span><span class="p">,</span> 
+        <span class="n">shape_location</span><span class="p">.</span><span class="n">belowbar</span><span class="p">,</span> 
+        <span class="mi">0</span><span class="p">,</span> 
+        <span class="s2">&quot;COMPRA RT&quot;</span><span class="p">,</span> 
+        <span class="n">comprar_color</span><span class="p">)</span>
+
+<span class="kr">end</span>
+</code></pre></div>
+<h2 id="simple-reversal-point">Simple Reversal Point</h2>
+<p><a href="Fonte">https://github.com/sumanblack666/IQ-Option-Lua-scripts/blob/main/Simple%20Reversal%20Point.lua</a></p>
+<div class="highlight"><span class="filename">Simple Reversal Point.lua</span><pre><span></span><code><span class="n">instrument</span> <span class="p">{</span> <span class="n">name</span> <span class="o">=</span> <span class="s2">&quot;imple Reversal Point&quot;</span><span class="p">,</span> <span class="n">overlay</span> <span class="o">=</span> <span class="kc">true</span><span class="p">,</span> <span class="n">icon</span><span class="o">=</span><span class="s2">&quot;indicators:ATR&quot;</span> <span class="p">}</span>
+
+<span class="n">c1</span> <span class="o">=</span> <span class="n">close</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="o">&lt;</span> <span class="n">open</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="ow">and</span> <span class="n">close</span> <span class="o">&gt;</span> <span class="n">open</span>
+<span class="n">c2</span> <span class="o">=</span> <span class="n">close</span> <span class="o">&gt;</span> <span class="n">open</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span>
+<span class="n">c3</span> <span class="o">=</span> <span class="n">lowest</span><span class="p">(</span><span class="n">low</span><span class="p">,</span><span class="mi">3</span><span class="p">)</span> <span class="o">&lt;</span> <span class="n">lowest</span> <span class="p">(</span><span class="n">low</span><span class="p">,</span><span class="mi">50</span><span class="p">)[</span><span class="mi">1</span><span class="p">]</span> <span class="ow">or</span> <span class="n">lowest</span><span class="p">(</span><span class="n">low</span><span class="p">,</span><span class="mi">3</span><span class="p">)</span> <span class="o">&lt;</span> <span class="n">lowest</span><span class="p">(</span><span class="n">low</span><span class="p">,</span><span class="mi">50</span><span class="p">)[</span><span class="mi">2</span><span class="p">]</span> <span class="ow">or</span> <span class="n">lowest</span><span class="p">(</span><span class="n">low</span><span class="p">,</span><span class="mi">3</span><span class="p">)</span> <span class="o">&lt;</span> <span class="n">lowest</span><span class="p">(</span><span class="n">low</span><span class="p">,</span><span class="mi">50</span><span class="p">)[</span><span class="mi">3</span><span class="p">]</span>
+<span class="n">buy</span> <span class="o">=</span> <span class="n">c1</span> <span class="ow">and</span> <span class="n">c2</span> <span class="ow">and</span> <span class="n">c3</span>
+
+<span class="n">c4</span> <span class="o">=</span> <span class="n">close</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="o">&gt;</span> <span class="n">open</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="ow">and</span> <span class="n">close</span> <span class="o">&lt;</span> <span class="n">open</span>
+<span class="n">c5</span> <span class="o">=</span> <span class="n">close</span> <span class="o">&lt;</span> <span class="n">open</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span>
+<span class="n">c6</span> <span class="o">=</span> <span class="n">highest</span><span class="p">(</span><span class="n">high</span><span class="p">,</span><span class="mi">3</span><span class="p">)</span> <span class="o">&gt;</span> <span class="n">highest</span> <span class="p">(</span><span class="n">high</span><span class="p">,</span><span class="mi">50</span><span class="p">)[</span><span class="mi">1</span><span class="p">]</span> <span class="ow">or</span> <span class="n">highest</span><span class="p">(</span><span class="n">high</span><span class="p">,</span><span class="mi">3</span><span class="p">)</span> <span class="o">&gt;</span> <span class="n">highest</span><span class="p">(</span><span class="n">high</span><span class="p">,</span><span class="mi">50</span><span class="p">)[</span><span class="mi">2</span><span class="p">]</span> <span class="ow">or</span> <span class="n">highest</span><span class="p">(</span><span class="n">high</span><span class="p">,</span><span class="mi">3</span><span class="p">)</span> <span class="o">&gt;</span> <span class="n">highest</span><span class="p">(</span><span class="n">high</span><span class="p">,</span><span class="mi">50</span><span class="p">)[</span><span class="mi">3</span><span class="p">]</span>
+<span class="n">sell</span> <span class="o">=</span> <span class="n">c4</span> <span class="ow">and</span> <span class="n">c5</span> <span class="ow">and</span> <span class="n">c6</span>
+
+<span class="n">plot_shape</span><span class="p">(</span><span class="n">buy</span><span class="p">,</span> <span class="s2">&quot;long&quot;</span><span class="p">,</span> <span class="n">shape_style</span><span class="p">.</span><span class="n">triangleup</span><span class="p">,</span> <span class="n">shape_size</span><span class="p">.</span><span class="n">large</span><span class="p">,</span> <span class="s1">&#39;green&#39;</span><span class="p">,</span> <span class="n">shape_location</span><span class="p">.</span><span class="n">belowbar</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="s1">&#39;BUY&#39;</span><span class="p">,</span> <span class="s1">&#39;green&#39;</span><span class="p">)</span>
+<span class="n">plot_shape</span><span class="p">(</span><span class="n">sell</span> <span class="p">,</span> <span class="s2">&quot;short&quot;</span><span class="p">,</span> <span class="n">shape_style</span><span class="p">.</span><span class="n">triangledown</span><span class="p">,</span> <span class="n">shape_size</span><span class="p">.</span><span class="n">large</span><span class="p">,</span> <span class="s1">&#39;red&#39;</span><span class="p">,</span> <span class="n">shape_location</span><span class="p">.</span><span class="n">abovebar</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="s1">&#39;SELL&#39;</span><span class="p">,</span> <span class="s1">&#39;red&#39;</span><span class="p">)</span>
+</code></pre></div>
+<hr />
+<h2 id="vdubs-mr-mani">Vdubs Mr Mani</h2>
+<p><a href="Fonte">https://github.com/sumanblack666/IQ-Option-Lua-scripts/blob/main/Vdubs%20Mr%20Mani.lua</a></p>
+<div class="highlight"><span class="filename">Vdubs Mr Mani.lua</span><pre><span></span><code><span class="n">instrument</span> <span class="p">{</span> <span class="n">name</span> <span class="o">=</span> <span class="s2">&quot;Vdubs Mr Mani&quot;</span><span class="p">,</span> <span class="n">overlay</span> <span class="o">=</span> <span class="kc">true</span><span class="p">,</span> <span class="n">icon</span><span class="o">=</span><span class="s2">&quot;indicators:ATR&quot;</span> <span class="p">}</span>
+
+<span class="n">input_group</span> <span class="p">{</span>
+    <span class="s2">&quot;front.ind.dpo.generalline&quot;</span><span class="p">,</span>
+    <span class="n">up_color</span> <span class="o">=</span> <span class="n">input</span> <span class="p">{</span> <span class="n">default</span> <span class="o">=</span> <span class="s2">&quot;#58FF44&quot;</span><span class="p">,</span> <span class="nb">type</span> <span class="o">=</span> <span class="n">input</span><span class="p">.</span><span class="n">color</span> <span class="p">},</span>
+    <span class="n">down_color</span> <span class="o">=</span> <span class="n">input</span> <span class="p">{</span> <span class="n">default</span> <span class="o">=</span> <span class="s2">&quot;#57A1D0&quot;</span><span class="p">,</span> <span class="nb">type</span> <span class="o">=</span> <span class="n">input</span><span class="p">.</span><span class="n">color</span> <span class="p">},</span>
+    <span class="n">width</span> <span class="o">=</span> <span class="n">input</span> <span class="p">{</span> <span class="n">default</span> <span class="o">=</span> <span class="mi">1</span><span class="p">,</span> <span class="nb">type</span> <span class="o">=</span> <span class="n">input</span><span class="p">.</span><span class="n">line_width</span> <span class="p">}</span>
+<span class="p">}</span>
+
+<span class="n">fn</span>     <span class="o">=</span> <span class="n">input</span> <span class="p">(</span><span class="n">averages</span><span class="p">.</span><span class="n">ema</span><span class="p">,</span> <span class="s2">&quot;front.newind.average&quot;</span><span class="p">,</span> <span class="n">input</span><span class="p">.</span><span class="n">string_selection</span><span class="p">,</span> <span class="n">averages</span><span class="p">.</span><span class="n">titles</span><span class="p">)</span>
+
+<span class="kd">local</span> <span class="n">avg</span> <span class="o">=</span> <span class="n">averages</span> <span class="p">[</span><span class="n">fn</span><span class="p">]</span>
+<span class="c1">--ema signal 1</span>
+<span class="n">src0</span> <span class="o">=</span> <span class="n">close</span>
+<span class="n">len0</span> <span class="o">=</span> <span class="mi">13</span>
+<span class="n">ema0</span> <span class="o">=</span> <span class="n">ema</span><span class="p">(</span><span class="n">src0</span><span class="p">,</span> <span class="n">len0</span><span class="p">)</span>
+<span class="n">rising1</span> <span class="o">=</span> <span class="n">ema0</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">&gt;</span> <span class="n">ema0</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="ow">and</span> <span class="n">ema0</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="o">&gt;</span> <span class="n">ema0</span><span class="p">[</span><span class="mi">2</span><span class="p">]</span>
+<span class="n">falling1</span> <span class="o">=</span> <span class="n">ema0</span><span class="p">[</span><span class="mi">2</span><span class="p">]</span> <span class="o">&gt;</span> <span class="n">ema0</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="ow">and</span> <span class="n">ema0</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="o">&gt;</span> <span class="n">ema0</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
+<span class="c1">--</span>
+<span class="n">direction</span> <span class="o">=</span> <span class="n">iff</span><span class="p">(</span><span class="n">rising1</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span><span class="n">iff</span><span class="p">(</span><span class="n">falling1</span><span class="p">,</span> <span class="o">-</span><span class="mi">1</span><span class="p">,</span> <span class="mi">0</span> <span class="p">))</span>
+<span class="n">plot_color</span> <span class="o">=</span> <span class="n">iff</span><span class="p">(</span><span class="n">direction</span> <span class="o">&gt;</span> <span class="mi">0</span> <span class="p">,</span> <span class="n">up_color</span><span class="p">,</span><span class="n">iff</span><span class="p">(</span> <span class="n">direction</span> <span class="o">&lt;</span> <span class="mi">0</span><span class="p">,</span> <span class="n">down_color</span> <span class="p">,</span> <span class="n">na</span><span class="p">))</span>
+<span class="n">plot</span><span class="p">(</span><span class="n">ema0</span><span class="p">,</span> <span class="s1">&#39;EMA&#39;</span><span class="p">,</span> <span class="n">plot_color</span> <span class="p">,</span> <span class="n">width</span><span class="p">,</span> <span class="o">-</span><span class="mi">1</span><span class="p">,</span> <span class="n">style</span><span class="p">.</span><span class="n">solid_line</span><span class="p">,</span> <span class="n">na_mode</span><span class="p">.</span><span class="n">continue</span><span class="p">)</span>
+<span class="c1">--ema signal 2</span>
+<span class="n">src02</span> <span class="o">=</span> <span class="n">close</span>
+<span class="n">len02</span> <span class="o">=</span> <span class="mi">21</span>
+<span class="n">ema02</span> <span class="o">=</span> <span class="n">ema</span><span class="p">(</span><span class="n">src02</span><span class="p">,</span> <span class="n">len02</span><span class="p">)</span>
+<span class="n">rising2</span> <span class="o">=</span> <span class="n">ema02</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">&gt;</span> <span class="n">ema02</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="ow">and</span> <span class="n">ema02</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="o">&gt;</span> <span class="n">ema02</span><span class="p">[</span><span class="mi">2</span><span class="p">]</span>
+<span class="n">falling2</span> <span class="o">=</span> <span class="n">ema02</span><span class="p">[</span><span class="mi">2</span><span class="p">]</span> <span class="o">&gt;</span> <span class="n">ema02</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="ow">and</span> <span class="n">ema02</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="o">&gt;</span> <span class="n">ema02</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
+<span class="n">direction2</span> <span class="o">=</span> <span class="n">iff</span><span class="p">(</span><span class="n">rising2</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span><span class="n">iff</span><span class="p">(</span><span class="n">falling2</span><span class="p">,</span> <span class="o">-</span><span class="mi">1</span><span class="p">,</span> <span class="mi">0</span> <span class="p">))</span>
+<span class="n">plot_color2</span> <span class="o">=</span> <span class="n">iff</span><span class="p">(</span><span class="n">direction2</span> <span class="o">&gt;</span> <span class="mi">0</span> <span class="p">,</span> <span class="n">up_color</span><span class="p">,</span><span class="n">iff</span><span class="p">(</span> <span class="n">direction2</span> <span class="o">&lt;</span> <span class="mi">0</span><span class="p">,</span> <span class="n">down_color</span> <span class="p">,</span> <span class="n">na</span><span class="p">))</span>
+<span class="n">plot</span><span class="p">(</span><span class="n">ema02</span><span class="p">,</span> <span class="s1">&#39;EMA Signal 2&#39;</span><span class="p">,</span> <span class="n">plot_color2</span> <span class="p">,</span> <span class="n">width</span><span class="p">,</span> <span class="o">-</span><span class="mi">1</span><span class="p">,</span> <span class="n">style</span><span class="p">.</span><span class="n">solid_line</span><span class="p">,</span> <span class="n">na_mode</span><span class="p">.</span><span class="n">continue</span><span class="p">)</span>
+
+<span class="c1">--ema signal out</span>
+
+<span class="n">fast</span> <span class="o">=</span> <span class="mi">5</span>
+<span class="n">slow</span> <span class="o">=</span> <span class="mi">8</span>
+<span class="n">avg0</span> <span class="o">=</span> <span class="p">(</span><span class="n">low</span> <span class="o">+</span> <span class="n">close</span><span class="p">)</span><span class="o">/</span><span class="mi">2</span>
+<span class="n">avg1</span> <span class="o">=</span> <span class="p">(</span><span class="n">high</span> <span class="o">+</span> <span class="n">close</span><span class="p">)</span><span class="o">/</span><span class="mi">2</span>
+<span class="n">vh1</span> <span class="o">=</span> <span class="n">ema</span><span class="p">(</span><span class="n">highest</span><span class="p">(</span><span class="n">avg0</span><span class="p">,</span> <span class="n">fast</span><span class="p">),</span> <span class="mi">5</span><span class="p">)</span>
+<span class="n">vl1</span> <span class="o">=</span> <span class="n">ema</span><span class="p">(</span><span class="n">lowest</span><span class="p">(</span><span class="n">avg1</span><span class="p">,</span> <span class="n">slow</span><span class="p">),</span> <span class="mi">8</span><span class="p">)</span>
+<span class="c1">--print(vl1)</span>
+
+<span class="n">e_ema1</span> <span class="o">=</span> <span class="n">ema</span><span class="p">(</span><span class="n">close</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span>
+<span class="n">e_ema2</span> <span class="o">=</span> <span class="n">ema</span><span class="p">(</span><span class="n">e_ema1</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span>
+<span class="n">e_ema3</span> <span class="o">=</span> <span class="n">ema</span><span class="p">(</span><span class="n">e_ema2</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span>
+<span class="n">tema</span> <span class="o">=</span> <span class="mi">1</span> <span class="o">*</span> <span class="p">(</span><span class="n">e_ema1</span> <span class="o">-</span> <span class="n">e_ema2</span><span class="p">)</span> <span class="o">+</span> <span class="n">e_ema3</span>
+<span class="c1">--print(tema)</span>
+
+
+<span class="n">e_e1</span> <span class="o">=</span> <span class="n">ema</span><span class="p">(</span><span class="n">close</span><span class="p">,</span> <span class="mi">8</span><span class="p">)</span>
+<span class="n">e_e2</span> <span class="o">=</span> <span class="n">ema</span><span class="p">(</span><span class="n">e_e1</span><span class="p">,</span> <span class="mi">5</span><span class="p">)</span>
+<span class="n">dema</span> <span class="o">=</span> <span class="mi">2</span> <span class="o">*</span> <span class="n">e_e1</span> <span class="o">-</span> <span class="n">e_e2</span>
+<span class="c1">--print(dema)</span>
+<span class="n">signal</span> <span class="o">=</span> <span class="n">iff</span><span class="p">(</span><span class="n">tema</span> <span class="o">&gt;</span> <span class="n">dema</span> <span class="p">,</span> <span class="n">max</span> <span class="p">(</span><span class="n">vh1</span><span class="p">,</span> <span class="n">vl1</span><span class="p">)</span> <span class="p">,</span> <span class="n">min</span> <span class="p">(</span><span class="n">vh1</span><span class="p">,</span> <span class="n">vl1</span><span class="p">))</span>
+<span class="c1">--print(signal)</span>
+
+
+<span class="n">is_call</span> <span class="o">=</span> <span class="n">tema</span> <span class="o">&gt;</span> <span class="n">dema</span> <span class="ow">and</span> <span class="n">signal</span> <span class="o">&gt;</span> <span class="n">low</span> <span class="ow">and</span> <span class="p">(</span><span class="n">signal</span><span class="o">-</span><span class="n">signal</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="o">&gt;</span> <span class="n">signal</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span><span class="o">-</span><span class="n">signal</span><span class="p">[</span><span class="mi">2</span><span class="p">])</span>
+<span class="n">is_put</span> <span class="o">=</span> <span class="n">tema</span> <span class="o">&lt;</span> <span class="n">dema</span> <span class="ow">and</span> <span class="n">signal</span> <span class="o">&lt;</span> <span class="n">high</span> <span class="ow">and</span> <span class="p">(</span><span class="n">signal</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span><span class="o">-</span><span class="n">signal</span> <span class="o">&gt;</span> <span class="n">signal</span><span class="p">[</span><span class="mi">2</span><span class="p">]</span><span class="o">-</span><span class="n">signal</span><span class="p">[</span><span class="mi">1</span><span class="p">])</span>
+
+
+<span class="n">period</span> <span class="o">=</span> <span class="mi">30</span>
+<span class="n">plot_shape</span><span class="p">(</span><span class="n">iff</span><span class="p">(</span><span class="n">is_call</span> <span class="ow">and</span> <span class="n">direction</span> <span class="o">&gt;</span> <span class="mi">0</span> <span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="n">na</span><span class="p">),</span> <span class="s2">&quot;long&quot;</span><span class="p">,</span> <span class="n">shape_style</span><span class="p">.</span><span class="n">triangleup</span><span class="p">,</span> <span class="n">shape_size</span><span class="p">.</span><span class="n">large</span><span class="p">,</span> <span class="s1">&#39;green&#39;</span><span class="p">,</span> <span class="n">shape_location</span><span class="p">.</span><span class="n">belowbar</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="s1">&#39;BUY&#39;</span><span class="p">,</span> <span class="s1">&#39;green&#39;</span><span class="p">)</span>
+<span class="n">plot_shape</span><span class="p">(</span><span class="n">iff</span><span class="p">(</span><span class="n">is_put</span> <span class="ow">and</span> <span class="n">direction</span> <span class="o">&lt;</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="n">na</span><span class="p">)</span> <span class="p">,</span> <span class="s2">&quot;short&quot;</span><span class="p">,</span> <span class="n">shape_style</span><span class="p">.</span><span class="n">triangledown</span><span class="p">,</span> <span class="n">shape_size</span><span class="p">.</span><span class="n">large</span><span class="p">,</span> <span class="s1">&#39;red&#39;</span><span class="p">,</span> <span class="n">shape_location</span><span class="p">.</span><span class="n">abovebar</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="s1">&#39;SELL&#39;</span><span class="p">,</span> <span class="s1">&#39;red&#39;</span><span class="p">)</span>
+<span class="n">plot</span> <span class="p">(</span><span class="n">hma</span> <span class="p">(</span><span class="n">src0</span><span class="p">,</span> <span class="n">period</span><span class="p">),</span> <span class="s2">&quot;HMA&quot;</span><span class="p">,</span> <span class="s1">&#39;#FF00FF&#39;</span><span class="p">,</span> <span class="mi">2</span><span class="p">)</span>
+</code></pre></div>
+                
+              
+              
+                
+
+
+              
+            </article>
+          </div>
+        </div>
+        
+          <a href="#" class="md-top md-icon" data-md-component="top" data-md-state="hidden">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8v12z"/></svg>
+            Voltar ao topo
+          </a>
+        
+      </main>
+      
+        
+<footer class="md-footer">
+  
+    <nav class="md-footer__inner md-grid" aria-label="Rodapé">
+      
+        
+        <a href="../key/" class="md-footer__link md-footer__link--prev" aria-label="Anterior: Como proteger seu Script/Indicador" rel="prev">
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+          </div>
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Anterior
+              </span>
+              Como proteger seu Script/Indicador
+            </div>
+          </div>
+        </a>
+      
+      
+    </nav>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-footer-copyright">
+        
+          <div class="md-footer-copyright__highlight">
+            Copyright &copy; 2021 - IQ Coding
+          </div>
+        
+        
+          Made with
+          <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+            Material for MkDocs
+          </a>
+        
+        
+      </div>
+      
+  <div class="md-footer-social">
+    
+      
+      
+      <a href="https://t.me/iqcoding_vip" target="_blank" rel="noopener" title="IQ Coding no Telegram" class="md-footer-social__link">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><path d="M248 8C111 8 0 119 0 256s111 248 248 248 248-111 248-248S385 8 248 8zm121.8 169.9-40.7 191.8c-3 13.6-11.1 16.9-22.4 10.5l-62-45.7-29.9 28.8c-3.3 3.3-6.1 6.1-12.5 6.1l4.4-63.1 114.9-103.8c5-4.4-1.1-6.9-7.7-2.5l-142 89.4-61.2-19.1c-13.3-4.2-13.6-13.3 2.8-19.7l239.1-92.2c11.1-4 20.8 2.7 17.2 19.5z"/></svg>
+      </a>
+    
+      
+      
+      <a href="https://youtube.com/c/iqcoding" target="_blank" rel="noopener" title="IQ Coding no YouTube" class="md-footer-social__link">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><path d="M549.655 124.083c-6.281-23.65-24.787-42.276-48.284-48.597C458.781 64 288 64 288 64S117.22 64 74.629 75.486c-23.497 6.322-42.003 24.947-48.284 48.597-11.412 42.867-11.412 132.305-11.412 132.305s0 89.438 11.412 132.305c6.281 23.65 24.787 41.5 48.284 47.821C117.22 448 288 448 288 448s170.78 0 213.371-11.486c23.497-6.321 42.003-24.171 48.284-47.821 11.412-42.867 11.412-132.305 11.412-132.305s0-89.438-11.412-132.305zm-317.51 213.508V175.185l142.739 81.205-142.739 81.201z"/></svg>
+      </a>
+    
+  </div>
+
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    <script id="__config" type="application/json">{"base": "..", "features": ["navigation.instant", "navigation.tracking", "navigation.tabs", "navigation.expand", "navigation.sections", "navigation.top", "toc.integrate", "navigation.indexes", "search.suggest", "search.share"], "translations": {"clipboard.copy": "Copiar para \u00e1rea de transfer\u00eancia", "clipboard.copied": "Copiado para \u00e1rea de transfer\u00eancia", "search.config.lang": "pt", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Buscar", "search.result.placeholder": "Digite para iniciar a busca", "search.result.none": "Nenhum resultado encontrado", "search.result.one": "1 resultado encontrado", "search.result.other": "# resultados encontrados", "search.result.more.one": "Mais 1 nesta p\u00e1gina", "search.result.more.other": "Mais # nesta p\u00e1gina", "search.result.term.missing": "Ausente", "select.version.title": "Selecione a vers\u00e3o"}, "search": "../assets/javascripts/workers/search.fcfe8b6d.min.js", "version": {"provider": 0.8}}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.b1047164.min.js"></script>
+      
+    
+  </body>
+</html>
