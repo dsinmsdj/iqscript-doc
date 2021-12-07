@@ -13,10 +13,9 @@ Não é necessário utilizar nenhum sistema extra, o script que irá rodar no IQ
 
 ## Change Logs
 
-#### 17/11/2021 - v0.8
+#### 17/11/2021 - v1.0
 
-* Adição do bars_since_highest()
-* Adição do bars_since_lowest()
+* Primeira versão disponibilizada
 
 ----
 
