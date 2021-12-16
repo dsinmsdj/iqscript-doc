@@ -13,6 +13,25 @@ Não é necessário utilizar nenhum sistema extra, o script que irá rodar no IQ
 
 ## Change Logs
 
+#### 16/12/2021 - v1.1
+
+* Adicionado a opção de passar a fonte e o periodo em string para os indicadores(sma, rma, ema, etc)
+* rma() adicinado (indicador rolling moving average)
+* vwma() adicinado (indicador volume weighted moving average)
+* nz() adicionado
+* get_value() corrigido
+* na() corrigido
+* tr adicionado
+* highest() retrabalhado para funcionar igual o da IQ Option
+* lowest() retrabalhado para funcionar igual o da IQ Option
+* Soros adicionado
+
+!!! danger "Sobre o indicado SSMA"
+	ssma() está sendo trabalhando ainda, o retorno do indicador esta vindo com a 5º casa numérica (taxa menores que 0. é na 5º casa decimal) errada, resultando em um funcionamento incorreto.
+	A utilização deste indicador não é recomendada até que seja ajustado, use por sua conta e risco.
+
+----
+
 #### 17/11/2021 - v1.0
 
 * Primeira versão disponibilizada

@@ -43,8 +43,8 @@ Aqui, usarei o mesmo "modelo" de apresentação que é utilizado na [documentaç
 - [x] hlcc4	
 	* overlayable - (high + low + close + close) / 4
 	
-- [ ] tr	
-	* NÃO ESTÁ DISPONÍVEL
+- [x] tr	
+	* max (high - low, high - close [1], close [1] - low) (aka true range)
 
 - [x] close_time
 	* Candle closing time (unix time)
@@ -87,12 +87,12 @@ Para consultar como cada função funciona, por favor, utilize a [documentação
 * [x] alma
 * [x] ema
 * [x] hma
-* [ ] rma
+* [x] rma
 * [x] sma
 * [x] ssma
 * [x] tma
 * [x] vidya
-* [ ] vwma
+* [x] vwma
 * [x] wma
 
 ----
@@ -198,7 +198,7 @@ Para consultar como cada função funciona, por favor, utilize a [documentação
 * [x] lowest
 * [ ] make_series
 * [x] na
-* [ ] nz
+* [x] nz
 * [ ] prime_bands
 * [ ] print
 * [ ] rgb

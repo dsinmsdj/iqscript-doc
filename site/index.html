@@ -310,6 +310,13 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
+  <a href="#16122021-v11" class="md-nav__link">
+    16/12/2021 - v1.1
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#17112021-v10" class="md-nav__link">
     17/11/2021 - v1.0
   </a>
@@ -413,6 +420,25 @@
 <p>Basicamente, é um sistema projetado para rodar localmente grande parte dos scripts em Lua feitos para a IQ Option.</p>
 <p>Não é necessário utilizar nenhum sistema extra, o script que irá rodar no IQ Script não precisa nem estar na plataforma pois tudo é calculado em tempo real pelo sistema.</p>
 <h2 id="change-logs">Change Logs</h2>
+<h4 id="16122021-v11">16/12/2021 - v1.1</h4>
+<ul>
+<li>Adicionado a opção de passar a fonte e o periodo em string para os indicadores(sma, rma, ema, etc)</li>
+<li>rma() adicinado (indicador rolling moving average)</li>
+<li>vwma() adicinado (indicador volume weighted moving average)</li>
+<li>nz() adicionado</li>
+<li>get_value() corrigido</li>
+<li>na() corrigido</li>
+<li>tr adicionado</li>
+<li>highest() retrabalhado para funcionar igual o da IQ Option</li>
+<li>lowest() retrabalhado para funcionar igual o da IQ Option</li>
+<li>Soros adicionado</li>
+</ul>
+<div class="admonition danger">
+<p class="admonition-title">Sobre o indicado SSMA</p>
+<p>ssma() está sendo trabalhando ainda, o retorno do indicador esta vindo com a 5º casa numérica (taxa menores que 0. é na 5º casa decimal) errada, resultando em um funcionamento incorreto.
+A utilização deste indicador não é recomendada até que seja ajustado, use por sua conta e risco.</p>
+</div>
+<hr />
 <h4 id="17112021-v10">17/11/2021 - v1.0</h4>
 <ul>
 <li>Primeira versão disponibilizada</li>
