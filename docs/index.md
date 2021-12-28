@@ -13,6 +13,14 @@ Não é necessário utilizar nenhum sistema extra, o script que irá rodar no IQ
 
 ## Change Logs
 
+#### 27/12/2021 - v1.2
+
+* O sistema agora consegue identificar a direção do sinal baseado na direção da seta(arrowup/arrowdown) do plot_shape()
+* Correção nos calculos referente as funções/dados build-in
+* input_group{} Ajustado
+
+----
+
 #### 16/12/2021 - v1.1
 
 * Adicionado a opção de passar a fonte e o periodo em string para os indicadores(sma, rma, ema, etc)
